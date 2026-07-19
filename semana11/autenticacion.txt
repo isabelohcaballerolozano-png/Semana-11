@@ -1,0 +1,3 @@
+Autenticación y login (explicación en 5-8 líneas)
+
+El login es el proceso mediante el cual un usuario ingresa sus credenciales (por ejemplo, correo y contraseña) para ser identificado por la aplicación. Al autenticarse, el sistema puede otorgar accesos y permisos según el rol o el perfil del usuario. Algunas rutas deben estar protegidas porque contienen información privada, acciones sensibles o datos administrativos que no deben estar disponibles para cualquiera. No se deben exponer públicamente contraseñas, tokens, claves de API, documentos de identidad, números de teléfono ni direcciones exactas. Además, las contraseñas deben almacenarse de forma segura (hash + salt) y las sesiones deben gestionarse con cuidado para evitar suplantación.

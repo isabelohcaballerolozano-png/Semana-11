@@ -1,0 +1,20 @@
+Interfaz básica para la plataforma comunitaria
+
+- Formulario para crear una causa:
+  - Campos: título, descripción, categoría (opcional) y botón "Crear causa".
+  - Validaciones simples: título requerido, descripción mínima.
+
+- Lista / Vista de causas disponibles:
+  - Muestra tarjeta por causa con título, resumen, fecha y contador de apoyos.
+  - Cada tarjeta incluye un enlace a la vista detallada.
+
+- Botón para apoyar una causa:
+  - En la tarjeta y en la vista detalle hay un botón "Apoyar".
+  - Al pulsarlo, se incrementa el contador (si el usuario ya apoyó, deshabilitar o mostrar "Ya apoyaste").
+
+- Contador de apoyos:
+  - Visible en la tarjeta y en la vista detalle; muestra el número total de apoyos.
+
+- Otras consideraciones:
+  - Interfaz limpia y accesible, con mensajes claros de éxito/error.
+  - No mostrar información privada (email completo, datos personales) en la vista pública.

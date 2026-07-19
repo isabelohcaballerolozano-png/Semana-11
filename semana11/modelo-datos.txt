@@ -1,0 +1,34 @@
+Modelo de datos básico para una plataforma comunitaria
+
+Entidad: Causa
+Campos principales:
+- id (entero, PK)
+- titulo (texto)
+- descripcion (texto)
+- fecha_creacion (fecha/hora)
+- autor_id (entero, FK a Usuario)
+- estado (texto) // p. ej., activa, cerrada
+
+Propósito:
+Guardar las causas comunitarias que los usuarios crean en la plataforma, con su información básica y estado para su gestión.
+
+Entidad: Apoyo
+Campos principales:
+- id (entero, PK)
+- causa_id (entero, FK a Causa)
+- usuario_id (entero, FK a Usuario)
+- fecha_apoyo (fecha/hora)
+
+Propósito:
+Registrar los apoyos que recibe cada causa para contar la participación y evitar apoyos duplicados.
+
+Entidad (adicional sugerida): Usuario
+Campos principales:
+- id (entero, PK)
+- nombre_usuario (texto)
+- email (texto)
+- hash_password (texto)
+- fecha_registro (fecha/hora)
+
+Propósito:
+Almacenar la información mínima necesaria para identificar cuentas, autenticar y controlar permisos.
